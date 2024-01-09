@@ -7,6 +7,7 @@ State enumeration for the data model type that maintains the state of the app.
 
 import Foundation
 
+@available(iOS 17.0, *)
 extension AppDataModel {
     enum ModelState: String, CustomStringConvertible {
         var description: String { rawValue }

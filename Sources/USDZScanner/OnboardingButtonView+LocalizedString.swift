@@ -7,6 +7,7 @@ The localized strings the onboarding button view uses.
 
 import Foundation
 
+@available(iOS 17.0, *)
 extension OnboardingButtonView {
     struct LocalizedString {
         static let `continue` = NSLocalizedString(

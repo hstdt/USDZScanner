@@ -7,6 +7,7 @@ The app's internal localized string type.
 
 import Foundation
 
+@available(iOS 17.0, *)
 extension CaptureOverlayView {
     struct LocalizedString {
         static let startCapture = NSLocalizedString(

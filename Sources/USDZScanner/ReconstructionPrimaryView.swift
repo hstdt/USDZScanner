@@ -186,6 +186,7 @@ struct ReconstructionProgressView: View {
 
 }
 
+@available(iOS 17.0, *)
 extension PhotogrammetrySession.Output.ProcessingStage {
     var processingStageString: String? {
         switch self {
@@ -237,6 +238,7 @@ extension PhotogrammetrySession.Output.ProcessingStage {
     }
 }
 
+@available(iOS 17.0, *)
 private struct TitleView: View {
     var body: some View {
         Text(LocalizedString.processingTitle)

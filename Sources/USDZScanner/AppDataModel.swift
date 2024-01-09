@@ -337,6 +337,7 @@ class AppDataModel: ObservableObject, Identifiable {
 
 }
 
+@available(iOS 17.0, *)
 extension AppDataModel {
     enum LocString {
         static let segment1FeedbackString = NSLocalizedString(

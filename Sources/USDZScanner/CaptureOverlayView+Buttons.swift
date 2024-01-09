@@ -10,11 +10,11 @@ import RealityKit
 import UniformTypeIdentifiers
 import os
 
+@available(iOS 17.0, *)
 extension CaptureOverlayView {
     static let logger = Logger(subsystem: GuidedCaptureSampleApp.subsystem,
                                category: "CaptureOverlayView+Buttons")
 
-    @available(iOS 17.0, *)
     @MainActor
     struct CaptureButton: View {
         var session: ObjectCaptureSession
@@ -60,7 +60,6 @@ extension CaptureOverlayView {
         }
     }
 
-    @available(iOS 17.0, *)
     struct ResetBoundingBoxButton: View {
         var session: ObjectCaptureSession
 
@@ -84,7 +83,6 @@ extension CaptureOverlayView {
         }
     }
 
-    @available(iOS 17.0, *)
     struct NextButton: View {
         @EnvironmentObject var appModel: AppDataModel
 
@@ -100,7 +98,6 @@ extension CaptureOverlayView {
         }
     }
     
-    @available(iOS 17.0, *)
     struct CloseButton: View {
         @Environment(\.dismiss) var dismiss
 
@@ -114,7 +111,6 @@ extension CaptureOverlayView {
         }
     }
 
-    @available(iOS 17.0, *)
     struct ManualShotButton: View {
         var session: ObjectCaptureSession
 
@@ -153,7 +149,6 @@ extension CaptureOverlayView {
             context: UIViewControllerRepresentableContext<DocumentBrowser>) {}
     }
 
-    @available(iOS 17.0, *)
     struct FilesButton: View {
         @EnvironmentObject var appModel: AppDataModel
         @State private var showDocumentBrowser = false
@@ -206,7 +201,6 @@ extension CaptureOverlayView {
         }
     }
 
-    @available(iOS 17.0, *)
     struct CancelButton: View {
         @EnvironmentObject var appModel: AppDataModel
 
@@ -221,7 +215,6 @@ extension CaptureOverlayView {
         }
     }
 
-    @available(iOS 17.0, *)
     struct NumOfImagesButton: View {
         var session: ObjectCaptureSession
 

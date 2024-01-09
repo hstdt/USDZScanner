@@ -7,6 +7,7 @@ The localized strings the onboarding tutorial view uses.
 
 import Foundation
 
+@available(iOS 17.0, *)
 extension OnboardingTutorialView {
     struct LocalizedString {
         static let tooFewImagesTitle = NSLocalizedString(

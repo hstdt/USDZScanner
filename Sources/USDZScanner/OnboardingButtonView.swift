@@ -9,9 +9,9 @@ import RealityKit
 import SwiftUI
 import os
 
-@available(iOS 17.0, *)
 /// View that creates the buttons on the review screen depending on
 /// `currentState` in `onboardingStateMachine`.
+@available(iOS 17.0, *)
 struct OnboardingButtonView: View {
     @EnvironmentObject var appModel: AppDataModel
     var session: ObjectCaptureSession

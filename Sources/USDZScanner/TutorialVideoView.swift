@@ -7,6 +7,7 @@ The view that plays the tutorial.
 
 import SwiftUI
 
+@available(iOS 17.0, *)
 struct TutorialVideoView: View {
     @EnvironmentObject var appModel: AppDataModel
     let url: URL

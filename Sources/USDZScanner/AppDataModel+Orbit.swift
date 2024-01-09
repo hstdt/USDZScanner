@@ -7,6 +7,7 @@ Device orbit component of a data model that maintains the state of the app.
 
 import UIKit
 
+@available(iOS 17.0, *)
 extension AppDataModel {
     enum Orbit: Int, CaseIterable, Identifiable, Comparable {
         case orbit1, orbit2, orbit3
@@ -72,6 +73,7 @@ extension AppDataModel {
     }
 }
 
+@available(iOS 17.0, *)
 extension AppDataModel {
     // A segment can have n orbits. An orbit can reset to go from the capturing state back to it's initial state.
     enum OrbitState {
