@@ -14,6 +14,6 @@ let package = Package(
     targets: [
         .target(
             name: "USDZScanner",
-            resources: [.copy("Resources/")])
+            resources: [.copy("ScanPasses/"), .process("Resources/")])
     ]
 )
