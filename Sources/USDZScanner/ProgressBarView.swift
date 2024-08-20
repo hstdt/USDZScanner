@@ -5,6 +5,7 @@ Abstract:
 Encapsulated view support for the scanning progress meter.
 */
 
+#if !targetEnvironment(simulator)
 import Foundation
 import SwiftUI
 import RealityKit
@@ -115,3 +116,4 @@ struct ProgressBarView: View {
         )
     }
 }
+#endif

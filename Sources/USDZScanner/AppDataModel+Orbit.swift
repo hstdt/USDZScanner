@@ -5,6 +5,7 @@ Abstract:
 Device orbit component of a data model that maintains the state of the app.
 */
 
+#if !targetEnvironment(simulator)
 import UIKit
 
 @available(iOS 17.0, *)
@@ -80,3 +81,4 @@ extension AppDataModel {
         case initial, capturing
     }
 }
+#endif

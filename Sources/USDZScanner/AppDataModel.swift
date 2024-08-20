@@ -5,6 +5,7 @@ Abstract:
 A data model that maintains the state of the app.
 */
 
+#if !targetEnvironment(simulator)
 import Combine
 import RealityKit
 import SwiftUI
@@ -369,3 +370,4 @@ extension AppDataModel {
         )
     }
 }
+#endif

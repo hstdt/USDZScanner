@@ -5,6 +5,7 @@ Abstract:
 The view that plays the tutorial.
 */
 
+#if !targetEnvironment(simulator)
 import SwiftUI
 
 @available(iOS 17.0, *)
@@ -55,3 +56,4 @@ struct TutorialVideoView: View {
         }
     }
 }
+#endif

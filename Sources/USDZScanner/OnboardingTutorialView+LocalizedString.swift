@@ -5,6 +5,7 @@ Abstract:
 The localized strings the onboarding tutorial view uses.
 */
 
+#if !targetEnvironment(simulator)
 import Foundation
 
 @available(iOS 17.0, *)
@@ -197,3 +198,4 @@ extension OnboardingTutorialView {
         )
     }
 }
+#endif

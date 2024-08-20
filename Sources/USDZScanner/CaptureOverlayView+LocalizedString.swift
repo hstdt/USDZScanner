@@ -5,6 +5,7 @@ Abstract:
 The app's internal localized string type.
 */
 
+#if !targetEnvironment(simulator)
 import Foundation
 
 @available(iOS 17.0, *)
@@ -53,3 +54,4 @@ extension CaptureOverlayView {
             comment: "Title for help button on the object capture screen to show the tutorial pages.")
     }
 }
+#endif

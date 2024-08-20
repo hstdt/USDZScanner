@@ -5,6 +5,7 @@ Abstract:
 Top-level SwiftUI container view for the entire app.
 */
 
+#if !targetEnvironment(simulator)
 import RealityKit
 import SwiftUI
 import os
@@ -91,4 +92,5 @@ struct USDZScanner_Previews: PreviewProvider {
         USDZScanner() { url in }
     }
 }
+#endif
 #endif

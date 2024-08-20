@@ -5,6 +5,7 @@ Abstract:
 The localized strings the onboarding button view uses.
 */
 
+#if !targetEnvironment(simulator)
 import Foundation
 
 @available(iOS 17.0, *)
@@ -53,3 +54,4 @@ extension OnboardingButtonView {
         )
     }
 }
+#endif

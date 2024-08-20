@@ -5,6 +5,7 @@ Abstract:
 A full-screen overlay UI with buttons that control the capture.
 */
 
+#if !targetEnvironment(simulator)
 import Foundation
 import RealityKit
 import SwiftUI
@@ -205,3 +206,4 @@ private struct BoundingBoxGuidanceView: View {
         }
     }
 }
+#endif
